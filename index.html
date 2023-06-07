@@ -1,0 +1,50 @@
+<!-- <ion-icon name="person-circle-outline"></ion-icon> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Desiging, Web Development, AI Models,Programming Courses - Shaury Singh</title>
+    <link rel="stylesheet" href="style_navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="node_modules/ionicons/dist/css/ionicons.min.css">
+
+</head>
+<!--src="https://i.pinimg.com/originals/1c/54/f7/1c54f7b06d7723c21afc5035bf88a5ef.png"-->
+<body class="body">
+    <div class="courses-dropdown">
+        <span onclick="RemoveDropDown()">&times;</span>
+        <ul>
+            <li>Web Development</li>
+            <li>Python</li>
+            <li>Artificial Intelligence</li>
+        </ul>
+    </div>
+    <div class="Log-In-Modal">
+        <h2>SIGN-UP</h2>
+        <input type="email" placeholder="Email-Id or Username"><span><ion-icon name='mail'></ion-icon></span><br>
+        <input type="password" placeholder="Password"><span><ion-icon name="lock-closed" class="password"></ion-icon></span></ion-icon><br>
+        <button>Create Account</button>
+    </div>
+    <div class="nav-bar">
+        <ul>
+            <a href=""><button class="nav-button" id="nb001"><ion-icon name="code-working-outline"></ion-icon>Projects</button></a>
+            <button class="nav-button" id="nb002"><ion-icon name="book-outline"></ion-icon>Courses<ion-icon name="chevron-down-outline" class="dropdown" onclick="ShowCourses()"></ion-icon></button>
+            <a href=""><button class="nav-button" id="nb003"><ion-icon name="call-outline"></ion-icon>Contact Us</button></a>
+            <a href=""><button class="nav-button" id="nb004"><ion-icon name="mail-unread-outline"></ion-icon>Buisness Queries</button></a>
+            <button class="nav-button" id="nb005" onclick="ShowSignInModal()"><ion-icon name="person-circle-outline"></ion-icon>Sign In</button>
+        </ul>
+    </div>
+    <div class="main-div">
+        <h1 class="main-heading">Web Development, Programming Courses, AI Tutorials <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  We Have You Covered</h1>
+        <img src="https://i.pinimg.com/originals/0f/8b/28/0f8b2870896edcde8f6149fe2733faaf.jpg" alt="" class="coding_logo">
+        <button class="main-button" style="margin-left: 105px;">Explore Courses</button>
+        <button class="main-button">Buisness Queries</button>
+    </div>
+    <script src="info.js"></script>
+    <script src="modals_script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
